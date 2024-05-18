@@ -11,17 +11,16 @@ import './App.css';
 /* Main application component */
 const App = () => {
   return (
-    <Router> {/* Router component for handling routes */}
-      <Header /> {/* Header component */}
-      <div className="section-container"> {/* Container for the main sections */}
+    <Router>
+      <Header />
+      <div className="section-container">
         <Routes>
-          <Route path="/" element={<Navigate to="/home" replace />} /> {/* Default route */}
-          <Route path="/home" element={<Home />} /> {/* Home component route */}
-          <Route path="/about" element={<About />} /> {/* About component route */}
-          <Route path="/projects" element={<Projects />} /> {/* Projects component route */}
-          <Route path="/skills" element={<Skills />} /> {/* Skills component route */}
-          <Route path="/contact" element={<Contact />} /> {/* Contact component route */}
-          <Route path="*" element={<Navigate to="/home" replace />} /> {/* Fallback route */}
+          <Route path="/" element={<Home />} /> {/* Make Home component serve the root path */}
+          <Route path="/about" element={<About />} />
+          <Route path="/projects" element={<Projects />} />
+          <Route path="/skills" element={<Skills />} />
+          <Route path="/contact" element={<Contact />} />
+          <Route path="*" element={<Navigate to="/" replace />} /> {/* Adjusted fallback route */}
         </Routes>
       </div>
     </Router>
