@@ -1,0 +1,73 @@
+/* Main container for the skills section */
+.skills-section {
+  background-color: rgba(0, 0, 0, 0);
+  padding: 20px 10px;
+  text-align: center;
+  margin-top: 0;
+}
+
+/* First paragraph styling within the skills section */
+.skills-section p:first-of-type {
+  margin-bottom: 10px;
+}
+
+/* General paragraph styling within the skills section */
+.skills-section p {
+  font-size: 1rem;
+}
+
+/* Container for the skills list */
+.skills-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 10px;
+  padding: 0;
+  margin: 0 auto;
+  max-width: 1000px;
+  list-style: none;
+  margin-top: 15px;
+}
+
+/* List styling within the skills list */
+.skills-list ul {
+  list-style: none;
+  padding: 0;
+  margin: 10px;
+  box-sizing: border-box;
+}
+
+/* List item styling within the skills list */
+.skills-list li {
+  color: #fff;
+  padding: 5px 10px;
+  margin: 5px 0;
+  border-radius: 5px;
+  font-size: 1rem;
+  transition: background-color 0.3s ease;
+}
+
+/* Footer styling */
+footer {
+  padding: 10px 0;
+  text-align: center;
+  background-color: #333;
+  color: #fff;
+}
+
+/* Container for social media icons */
+.social-icons {
+  margin-bottom: 10px;
+}
+
+/* Styling for each social media icon link */
+.social-icons a {
+  margin: 0 5px;
+  color: #fff;
+  font-size: 1.2rem;
+  transition: color 0.3s ease;
+}
+
+/* Hover effect for the social media icons */
+.social-icons a:hover {
+  color: #61dafb;
+}

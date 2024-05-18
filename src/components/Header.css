@@ -1,0 +1,55 @@
+/* Uses flexbox for layout, fixed positioning, and adjusts padding and background color */
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px; /* Make the header shorter in length */
+  background-color: black; /* Change background color to black */
+  color: white; /* Ensure text color matches the new background */
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  width: 100%;
+  z-index: 1000; /* Ensure the header stays on top of other elements */
+}
+
+/* Removes margin and sets font size and color */
+header h1 {
+  margin: 0;
+  font-size: 1rem;
+  color: white;
+}
+
+/* Sets color, removes underline, adjusts font size, and adds a transition effect */
+.home-link {
+  color: white;
+  text-decoration: none;
+  font-size: 1rem;
+  transition: color 0.3s ease; /* Smooth color transition on hover */
+}
+
+/* Changes color on hover */
+.home-link:hover {
+  color: #61dafb;
+}
+
+/* Sets color, removes underline, adjusts margin and font size, and adds a transition 
+effect */
+nav a {
+  color: white;
+  text-decoration: none;
+  margin: 0 15px;
+  font-size: 1rem;
+  transition: color 0.3s ease; /* Smooth color transition on hover */
+}
+
+/* SChanges color on hover */
+nav a:hover {
+  color: #61dafb;
+}
+
+/* SUses flexbox for layout */
+nav {
+  display: flex;
+}

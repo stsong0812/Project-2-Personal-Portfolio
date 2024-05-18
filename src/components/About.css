@@ -1,0 +1,56 @@
+/* Set default margin and padding  and use flexbox for layout with 
+column direction */
+   body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Container takes full available height and uses flexbox for layout */
+.container {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Center content */
+#about {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    text-align: center;
+    margin-top: 20px;
+}
+
+/* Style the paragraphs to have max width, margin, and text alignment */
+#about p {
+    max-width: 1000px;
+    margin: 20px 0;
+    text-align: left;
+}
+
+/* Style unordered lists to have max width, margin, and text alignment */
+#about ul {
+    max-width: 600px;
+    margin: 0 auto;
+    text-align: left;
+}
+
+/* Center the social icons */
+.social-icons {
+    text-align: center;
+    margin: 20px 0;
+}
+
+/* Style the anchor tags */
+.social-icons a {
+    margin: 0 10px;
+    text-decoration: none;
+    color: #fff;
+    font-size: 2rem;
+}

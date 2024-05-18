@@ -1,0 +1,42 @@
+/* Transparent background, white text, rounded corners, padding, margin, fixed width, 
+shadow, and transition effect */
+.project-card {
+  background-color: transparent;
+  color: white;
+  border-radius: 8px;
+  padding: 20px;
+  margin: 10px;
+  width: 300px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+}
+
+/* Project card margin and font size */
+.project-card p {
+  margin: 10px 0;
+  font-size: 1rem;
+}
+
+/* Project title font size, margin, and text color */
+.project-title {
+  font-size: 1rem;
+  margin-bottom: 10px;
+  color: white;
+}
+
+/* Project description font size and text color */
+.project-description {
+  font-size: 1rem;
+  color: white;
+}
+
+/* Project link color and no underline */
+.project-link {
+  color: #61dafb;
+  text-decoration: none;
+}
+
+/* Poject card slight upward movement on hover */
+.project-card:hover {
+  transform: translateY(-5px);
+}

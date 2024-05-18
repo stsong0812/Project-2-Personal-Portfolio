@@ -1,0 +1,75 @@
+/* Set default margin, padding, and height, and use flexbox for column layout */
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Container takes full available height and uses flexbox for column layout, centering content */
+.container {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* Main section takes full available space, centers content, and adds padding */
+main {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    text-align: center;
+}
+
+/* Style for introductory text */
+.intro-text {
+    font-size: 1rem;
+}
+
+/* Flexbox layout for content, centering items horizontally and vertically */
+.content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Flexbox items for ASCII art and description, with margins */
+.ascii, .description {
+    flex: 1;
+    margin: 10px;
+}
+
+/* ASCII art monospace font, preserved whitespace, left-aligned text */
+.ascii {
+    font-family: monospace;
+    white-space: pre;
+    text-align: left;
+}
+
+/* Font size, padding, max width, and left-aligned text */
+.description {
+    font-size: 1rem;
+    padding: 10px;
+    max-width: 300px;
+    text-align: left;
+}
+
+/* Center the social icons and add margin */
+.social-icons {
+    text-align: center;
+    margin: 20px 0;
+}
+
+/* Mrgin, no underline, white color, and large font size */
+.social-icons a {
+    margin: 0 10px;
+    text-decoration: none;
+    color: #fff;
+    font-size: 2rem;
+}
