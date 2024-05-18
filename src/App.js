@@ -15,7 +15,6 @@ const App = () => {
       <Header /> {/* Header component */}
       <div className="section-container"> {/* Container for the main sections */}
         <Routes>
-          <Route path="/" element={<Home />} /> {/* Redirect from root to /home */}
           <Route path="/home" element={<Home />} /> {/* Home component route */}
           <Route path="/about" element={<About />} /> {/* About component route */}
           <Route path="/projects" element={<Projects />} /> {/* Projects component route */}
